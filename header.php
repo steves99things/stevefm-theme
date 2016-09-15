@@ -24,11 +24,41 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-offset-2 col-md-offset-2 col-sm-10">
-                    <h1><?php echo get_bloginfo('name') ?></h1>
-                    <p><small><?php echo get_bloginfo('description') ?></small></p>
+                    <h2><?php echo get_bloginfo('name') ?> <br>
+                    <small><?php echo get_bloginfo('description') ?></small></h2>
                 </div>
             </div>
         </div>
     </div>
+
+    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" type="button" data-target="#nav-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- nav links -->
+            <div class="collapse navbar-collapse" id="nav-collapse">
+                <div class="row">
+                    <div class="col-sm-9 col-sm-offset-2 col-md-7">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="/">Home</a></li>
+                            <li><a href="">Building This</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="http://caverly.co">Caverly</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     
     <div class="container">

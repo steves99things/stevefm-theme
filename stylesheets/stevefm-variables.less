@@ -1,4 +1,32 @@
-@font-size-base: 18px;
-@font-family-serif: 'calluna', Georgia, "Times New Roman", Times, serif;
-@font-family-base: @font-family-serif;
+@font-size-base:           18px;
+@font-size-monospace:      (@font-size-base - 4);
+@font-family-serif:        'chaparral-pro', 'calluna', Georgia, "Times New Roman", Times, serif;
+@font-family-base:         @font-family-serif;
+@font-family-monospace:    'source-code-pro', Menlo, Monaco, Consolas, "Courier New", monospace;
+
+
+
+// -- Headings --
+@headings-font-family:  'futura-pt', Georgia, 'Times New Roman', Times, serif;
+@font-size-h1:            floor((@font-size-base * 2.441)); // ~36px
+@font-size-h2:            floor((@font-size-base * 1.953)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.563)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
+
+// -- Navbar --
+@navbar-border-radius:             0;
+@navbar-default-bg:                #FFF;
+@navbar-default-border:            0;
+
+// Navbar links
+@navbar-default-link-color:                #777;
+@navbar-default-link-hover-color:          #333;
+@navbar-default-link-hover-bg:             transparent;
+@navbar-default-link-active-color:         #555;
+@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-link-disabled-color:       #ccc;
+@navbar-default-link-disabled-bg:          transparent;
 
