@@ -19,8 +19,7 @@
 </head>
 <body>
     
-    
-    <div class="page-header">
+    <div class="page-header-container">
         <div class="container">
             <div class="row">
                 <div class="col-sm-offset-2 col-md-offset-2 col-sm-10">
@@ -33,4 +32,4 @@
 
     <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 
-    <div class="container">
+    
